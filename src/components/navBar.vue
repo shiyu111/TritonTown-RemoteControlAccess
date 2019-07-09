@@ -8,7 +8,10 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav d-flex">
-          <navLink></navLink>
+          <li v-for="page in pages" class="nav-item mx-4">
+            <a class="nav-link" @click="goTo(page.pathName)"
+              :class="[current == page.pathName ? 'active' : '']">{{page.displayName}}</a>
+          </li>
           <!-- <li class="nav-item mx-4">
             <a class="nav-link" @click="goTo('home')" :class="[current == 'home' ? 'active' : '']">Home</a>
           </li>
@@ -39,23 +42,29 @@
 </template>
 
 <script>
-  import navLink from '@/components/navLink.vue'
   import router from '../router'
   export default {
     name: "navBar",
     props: [],
     data() {
       return {
+        current: ''
 
       }
     },
-    computed: {},
+    computed: {
+      pages() {
+        return this.$store.state.navBarLinks.pages
+      }
+    },
     methods: {
-
+      goTo(page) {
+        router.push({ name: page })
+        this.current = page
+      }
 
     },
     components: {
-      navLink
     }
   }
 </script>
