@@ -8,27 +8,11 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav d-flex">
+          <!-- iterates over navlinks  -->
           <li v-for="page in pages" class="nav-item mx-4">
             <a class="nav-link" @click="goTo(page.pathName)"
               :class="[current == page.pathName ? 'active' : '']">{{page.displayName}}</a>
           </li>
-          <!-- <li class="nav-item mx-4">
-            <a class="nav-link" @click="goTo('home')" :class="[current == 'home' ? 'active' : '']">Home</a>
-          </li>
-          <li class=" nav-item mx-4">
-            <a class="nav-link" @click="goTo('get-started')" :class="[current == 'get-started' ? 'active' : '']">Get
-              Started</a>
-          </li>
-          <li class="nav-item mx-4">
-            <a class="nav-link">Tutorial for Beginners</a>
-          </li>
-          <li class="nav-item mx-4">
-            <a class="nav-link">Advanced Examples</a>
-          </li>
-          <li class="nav-item mx-4">
-            <a class="nav-link" @click="goTo('FAQ')">FAQ</a>
-          </li> -->
-
         </ul>
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
@@ -38,7 +22,6 @@
       </div>
     </nav>
   </div>
-  <!-- <span class="sr-only">(current)</span> -->
 </template>
 
 <script>
