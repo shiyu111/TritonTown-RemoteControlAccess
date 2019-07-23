@@ -1,0 +1,14 @@
+/home/ryan/tritontown/website/triton/obj/Debug/netcoreapp2.2/triton.csprojAssemblyReference.cache
+/home/ryan/tritontown/website/triton/obj/Debug/netcoreapp2.2/triton.csproj.CoreCompileInputs.cache
+/home/ryan/tritontown/website/triton/obj/Debug/netcoreapp2.2/triton.RazorAssemblyInfo.cache
+/home/ryan/tritontown/website/triton/obj/Debug/netcoreapp2.2/triton.RazorAssemblyInfo.cs
+/home/ryan/tritontown/website/triton/obj/Debug/netcoreapp2.2/triton.AssemblyInfoInputs.cache
+/home/ryan/tritontown/website/triton/obj/Debug/netcoreapp2.2/triton.AssemblyInfo.cs
+/home/ryan/tritontown/website/triton/bin/Debug/netcoreapp2.2/triton.deps.json
+/home/ryan/tritontown/website/triton/bin/Debug/netcoreapp2.2/triton.runtimeconfig.json
+/home/ryan/tritontown/website/triton/bin/Debug/netcoreapp2.2/triton.runtimeconfig.dev.json
+/home/ryan/tritontown/website/triton/bin/Debug/netcoreapp2.2/triton.dll
+/home/ryan/tritontown/website/triton/bin/Debug/netcoreapp2.2/triton.pdb
+/home/ryan/tritontown/website/triton/obj/Debug/netcoreapp2.2/triton.RazorTargetAssemblyInfo.cache
+/home/ryan/tritontown/website/triton/obj/Debug/netcoreapp2.2/triton.dll
+/home/ryan/tritontown/website/triton/obj/Debug/netcoreapp2.2/triton.pdb

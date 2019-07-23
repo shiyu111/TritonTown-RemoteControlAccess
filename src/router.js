@@ -4,6 +4,8 @@ import Home from './views/Home.vue'
 import getStarted from './views/GetStarted.vue'
 import FAQ from './views/FAQ.vue'
 import Tutorials from './views/Tutorials.vue'
+import About from './views/About.vue'
+import Login from './views/Login.vue'
 
 Vue.use(Router)
 
@@ -28,8 +30,16 @@ export default new Router({
       path: '/tutorials',
       name: 'tutorials',
       component: Tutorials
+    },
+    {
+      path: '/about',
+      name: 'about',
+      component: About
+    },
+    {
+      path: '/login',
+      name: 'login',
+      component: Login
     }
-
-
   ]
 })
