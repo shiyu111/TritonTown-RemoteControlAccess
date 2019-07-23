@@ -6,6 +6,7 @@ import FAQ from './views/FAQ.vue'
 import Tutorials from './views/Tutorials.vue'
 import About from './views/About.vue'
 import Login from './views/Login.vue'
+import Register from './views/Register.vue'
 
 Vue.use(Router)
 
@@ -35,6 +36,11 @@ export default new Router({
       path: '/about',
       name: 'about',
       component: About
+    },
+    {
+      path: '/register',
+      name: 'register',
+      component: Register
     },
     {
       path: '/login',

@@ -15,8 +15,25 @@
           </li>
         </ul>
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link">Sign In <i class="fas fa-user"></i></a>
+          <li class="nav-item mx-4">
+              <a class="nav-link" @click="goTo('register')">Register</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" @click="goTo('login')">Sign In<i class="fas fa-user"></i></a>
+          </li> -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Login
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" style="padding: 15px; padding-bottom: 10px;">
+              <form class="form-horizontal" method="post" accept-charset="UTF-8" @submit.prevent="loginUser">
+                  <input class="form-control login" type="text" name="username" placeholder="Username or email.."><br>
+                  <input class="form-control login" type="password" name="password" placeholder="Password.."><br>
+                  <div class="help-block text-left"><a href="">Forget the password ?</a></div><br>
+                  <label><input type="checkbox" checked="checked"> Keep me signed in</label><br>
+                  <input class="btn btn-primary" type="submit" name="submit" value="Login">
+              </form>
+            </div>
           </li>
         </ul>
       </div>
@@ -45,7 +62,6 @@
         router.push({ name: page })
         this.current = page
       }
-
     },
     components: {
     }
@@ -68,6 +84,15 @@
     max-height: 55px;
     cursor: pointer;
     /* border-radius: 40%; */
+  }
+
+  .dropdown-menu {
+    width: 400px;
+  }
+
+  .btn-primary {
+    background-color: #12284c;
+    border-color: black;
   }
 
   .nav-link {
